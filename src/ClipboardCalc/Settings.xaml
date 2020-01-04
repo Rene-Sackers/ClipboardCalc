@@ -1,0 +1,31 @@
+﻿<Window x:Class="ClipboardCalc.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" SizeToContent="WidthAndHeight" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Input" Margin="5" Grid.Row="0">
+            <StackPanel Orientation="Vertical">
+                <RadioButton Name="radioButtonInputPeriod" Content="." IsEnabled="False" IsChecked="True" />
+                <RadioButton Name="radioButtonInputComma" Content="," IsEnabled="False" />
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Output" Margin="5,0,5,0" Grid.Row="1">
+            <StackPanel Orientation="Vertical">
+                <RadioButton Name="radioButtonOutputPeriod" Content="." />
+                <RadioButton Name="radioButtonOutputComma" Content="," />
+            </StackPanel>
+        </GroupBox>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2">
+            <Button Name="buttonApply" Content="Apply" Width="75" Height="23" HorizontalAlignment="Right" Margin="5" Click="buttonApply_Click"/>
+            <Button Name="buttonCancel" Content="Cancel" Width="75" Height="23" HorizontalAlignment="Right" Margin="5" Click="buttonCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
