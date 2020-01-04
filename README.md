@@ -6,6 +6,10 @@ If you copy some text that is a valid formula, enclosed by parenthesis `( ... )`
 
 ![example gif](readme/example.gif)
 
+The application rests in your tray area with a very un-telling icon.
+
+![tray icon](readme/tray-icon.png)
+
 Maths functions:
 * pow(x, y) - calculates the power of `y` to `x`, basically `x ^ y`
 * abs(x) - calculates the absolute value of `x`
